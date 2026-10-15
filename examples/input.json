@@ -1,0 +1,14 @@
+{
+  "files": {
+    "src/cache.py": "def read(key):\n    return cache.get(key)\n"
+  },
+  "evidence": [
+    {
+      "id": "cache-lookup",
+      "path": "src/cache.py",
+      "start": 1,
+      "end": 2,
+      "contains": "return cache[key]"
+    }
+  ]
+}

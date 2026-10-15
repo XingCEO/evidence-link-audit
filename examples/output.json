@@ -1,0 +1,17 @@
+{
+  "checked": 1,
+  "evidence": [
+    {
+      "end": 2,
+      "id": "cache-lookup",
+      "issues": [
+        "snippet_missing"
+      ],
+      "path": "src/cache.py",
+      "sha256": "127a24d074ab0be4e143f59eb22046ba1613e5a3aff4f86e146e3954cf8e0947",
+      "start": 1,
+      "valid": false
+    }
+  ],
+  "valid": false
+}

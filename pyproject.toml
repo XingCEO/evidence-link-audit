@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-link-audit"
+version = "0.1.0"
+description = "Detect stale file-and-line evidence in AI-generated engineering reports."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "XingCEO"}]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+evidence-link-audit = "evidence_link_audit:main"
+
+[project.urls]
+Repository = "https://github.com/XingCEO/evidence-link-audit"
+Issues = "https://github.com/XingCEO/evidence-link-audit/issues"
+
+[tool.setuptools]
+py-modules = ["evidence_link_audit"]
