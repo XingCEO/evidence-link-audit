@@ -15,4 +15,11 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m pip install .
       - run: python -m unittest discover -v
-      - run: evidence-link-audit examples/input.json
+      - name: Capture native source evidence
+        run: evidence-link-audit --repo examples/repository --evidence examples/evidence.json --capture > "$RUNNER_TEMP/evidence.lock.json"
+      - name: Check native source evidence
+        run: evidence-link-audit --repo examples/repository --evidence "$RUNNER_TEMP/evidence.lock.json" --check
+      - name: Installed CLI rejects changed evidence
+        run: python examples/reproduce_stale.py
+      - name: Legacy snapshot interface
+        run: evidence-link-audit examples/input.json

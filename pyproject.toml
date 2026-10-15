@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "evidence-link-audit"
-version = "0.1.0"
-description = "Detect stale file-and-line evidence in AI-generated engineering reports."
+version = "0.2.0"
+description = "Capture and verify source-line evidence for coding agents and engineering reports."
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}

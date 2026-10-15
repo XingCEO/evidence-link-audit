@@ -1,9 +1,10 @@
 # Contributing to Evidence Link Audit
 
-1. Open an issue describing the input, observed report and expected behavior.
-2. Keep fixtures small, synthetic and free of credentials or proprietary data.
-3. Add a regression test before changing behavior.
-4. Run `python3 -m unittest discover -v` and the example command from the README.
-5. Update the input contract and example report if the public interface changes.
+Start with a concrete stale-evidence case and a small synthetic source tree. Keep fixtures free of private source, credentials, and personal paths.
 
-Prefer standard-library solutions. Discuss new dependencies and expanded format support first. Do not add network access, automatic code execution or destructive file writes to the analyzer without an explicit design discussion.
+- Add a regression test for observable behavior before changing range/hash semantics, path handling, or CLI statuses.
+- Run `python -m unittest discover -v`.
+- Install the package in a virtual environment and run `python examples/reproduce_stale.py` to exercise the console entry point.
+- Keep the README contract and example artifacts in sync with public behavior.
+
+Prefer the Python standard library. Discuss new dependencies, automatic citation parsing, or new source encodings before implementation. The analyzer should continue to avoid modifying source files, running project code, or accessing the network.

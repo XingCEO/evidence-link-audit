@@ -1,0 +1,16 @@
+{
+  "checked": 1,
+  "evidence": [
+    {
+      "end": 3,
+      "expected_sha256": "748e13e819925801ccefbf98b58ac51a9fd7db589e125b3945cdad4ca3d3fa12",
+      "id": "cache-miss-behavior",
+      "issues": [],
+      "path": "src/cache.py",
+      "sha256": "748e13e819925801ccefbf98b58ac51a9fd7db589e125b3945cdad4ca3d3fa12",
+      "start": 1,
+      "valid": true
+    }
+  ],
+  "valid": true
+}

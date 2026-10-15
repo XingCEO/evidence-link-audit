@@ -1,0 +1,11 @@
+{
+  "evidence": [
+    {
+      "id": "cache-miss-behavior",
+      "path": "src/cache.py",
+      "start": 1,
+      "end": 3,
+      "contains": "return cache.get(key)"
+    }
+  ]
+}
